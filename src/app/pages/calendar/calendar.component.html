@@ -1,0 +1,22 @@
+<app-header [date]="dateObservable | async">
+  <button mat-icon-button  (click)="drawer.toggle()">
+    <mat-icon>menu</mat-icon>
+  </button>
+</app-header>
+
+
+
+<mat-drawer-container class="main" autosize>
+  <mat-drawer #drawer  mode="side" opened>
+    <button  mat-raised-button class="createbtn">
+      <img src="../../../assets/icon/create.svg" alt="">
+      Create
+    </button>
+    <app-side-bar></app-side-bar>
+  </mat-drawer>
+  <app-calendar-view></app-calendar-view>
+
+</mat-drawer-container>
+
+
+

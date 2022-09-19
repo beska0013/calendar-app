@@ -1,0 +1,36 @@
+@import "../../../../../assets/scss/link";
+
+
+
+.mat-column-timeZone{
+  border-right: 1px solid #0000001f;
+  width: 75px;
+}
+
+.mat-cell{
+  color: #0000008A
+}
+.mat-header-cell{
+  padding:0 1.5rem;
+}
+
+.calendarDay{
+  @include flex(center, column);
+  width: 50px;
+  h6{
+    font-size: 11px;
+    color:#000000;
+    margin: 0;
+  }
+  span{
+    @include flex(center);
+    @include square(46px);
+    border-radius: 100%;
+    font-size: 25px;
+    color:#000000;
+    &.currentDay{
+      background-color:#1a73e8;
+      color:#FFFFFF;
+    }
+  }
+}

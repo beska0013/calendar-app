@@ -1,0 +1,43 @@
+@import "../../../../../assets/scss/link";
+
+header{
+  @include flex(between);
+  height: $homeHeaderHeight;
+  padding: 0 .5rem;
+ .calendar_cnt{
+   @include flex(start);
+   .title{
+     @include flex(center);
+     margin: 0 2rem  0 1rem;
+     svg{
+       @include square(50px);
+       text{
+         font-size: 36px;
+         color: #185abc;
+       }
+     }
+     span{
+       color: #5f6368;
+       font-size: 22px;
+       line-height: 24px;
+     }
+   }
+   .currentDateBtn{
+     margin: 0 1rem 0 0;
+   }
+   .dateSlider{
+     @include flex(center);
+     button{
+      &.leftBtn{
+        rotate: 180deg;
+      }
+     }
+     .date{
+       margin: 0;
+     }
+   }
+ }
+ .calendar_type{
+   @include flex(center);
+ }
+}

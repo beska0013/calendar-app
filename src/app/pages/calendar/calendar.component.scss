@@ -1,0 +1,17 @@
+@import "./../../../assets/scss/link";
+
+
+
+.main{
+
+  @include size(calc(100vh - #{$homeHeaderHeight}), 100%);
+  .createbtn{
+    position: absolute;
+  }
+  app-side-bar{
+    padding: 0 1rem;
+    width: 300px;
+  }
+}
+
+//padding: 0 $padding-main;
